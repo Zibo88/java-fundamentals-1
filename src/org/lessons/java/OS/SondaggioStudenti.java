@@ -2,7 +2,7 @@ package org.lessons.java.OS;
 
 import java.util.Scanner;
 
-public class sondaggioStudenti {
+public class SondaggioStudenti {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -28,9 +28,9 @@ public class sondaggioStudenti {
 		System.out.println("Quanti di questi usano MacOs?");
 		studentMacOs = data.nextInt();
 		
-		int percentualeDiStudentiWindows = (studentWindows*100)/studentNumber ;
-		int percentualeDiStudentLinux = (studentLinux*100)/studentNumber ;
-		int percentualeDiStudentMacOs = (studentMacOs*100)/studentNumber ;
+		double percentualeDiStudentiWindows = ((double)studentWindows*100)/studentNumber ;
+		double percentualeDiStudentLinux = ((double)studentLinux*100)/studentNumber ;
+		double percentualeDiStudentMacOs = ((double)studentMacOs*100)/studentNumber ;
 		
 		System.out.println("la percentuale di studenti che utilizza Windows è del: " + " " + percentualeDiStudentiWindows+"%" );
 		System.out.println("la percentuale di studenti che utilizza Linux è del: " + " " + percentualeDiStudentLinux+"%" );
