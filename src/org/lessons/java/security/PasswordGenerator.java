@@ -2,7 +2,7 @@ package org.lessons.java.security;
 
 import java.util.Scanner;
 
-public class passwordGenerator {
+public class PasswordGenerator {
 
 	public static void main(String[] args) {
 	// TODO Auto-generated method stub
