@@ -11,8 +11,8 @@ public class passwordGenerator {
 		String lastname;
 		String color;
 		
-		byte birthDay;
-		byte monthDay;
+		int birthDay;
+		int monthDay;
 		int yearBirthday;
 
 		
@@ -25,9 +25,9 @@ public class passwordGenerator {
 		color = data.nextLine();
 		System.out.println("Inserisci la tua data di nascita");
 		System.out.println("Dimmi il giorno del tuo compleanno");
-		birthDay = data.nextByte();
+		birthDay = data.nextInt();
 		System.out.println("Dimmi il mese del tuo compleanno");
-		monthDay = data.nextByte();
+		monthDay = data.nextInt();
 		System.out.println("Dimmi l'anno del tuo compleanno");
 		yearBirthday = data.nextInt();
 		
