@@ -8,9 +8,9 @@ public class sondaggioStudenti {
 		// TODO Auto-generated method stub
 		
 		int studentNumber;
-		byte studentWindows;
-		byte studentLinux;
-		byte studentMacOs;
+		int studentWindows;
+		int studentLinux;
+		int studentMacOs;
 		
 		
 		
@@ -20,13 +20,13 @@ public class sondaggioStudenti {
 		studentNumber = data.nextInt();
 		
 		System.out.println("Quanti di questi usano Windows?");
-		studentWindows = data.nextByte();
+		studentWindows = data.nextInt();
 		
 		System.out.println("Quanti di questi usano Linux?");
-		studentLinux = data.nextByte();
+		studentLinux = data.nextInt();
 		
 		System.out.println("Quanti di questi usano MacOs?");
-		studentMacOs = data.nextByte();
+		studentMacOs = data.nextInt();
 		
 		int percentualeDiStudentiWindows = (studentWindows*100)/studentNumber ;
 		int percentualeDiStudentLinux = (studentLinux*100)/studentNumber ;
