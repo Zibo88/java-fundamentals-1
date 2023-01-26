@@ -21,31 +21,35 @@ public class FerragnezList {
 //		Manuel Agnelli, J-Ax, Francesco Totti, Ilary Blasi, Bebe Vio, Luis, Pardis Zarei, 
 //		Martina Maccherone, Rachel Zeili
 //			
-			Scanner guestName = new Scanner(System.in);
+		Scanner guestName = new Scanner(System.in);
 		
-			String[] invited = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei" };
-			String invitedName;
+		String[] invited = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei" };
+		String invitedName;
+		String bodyGuardMessage = "";
+		
+		
+		System.out.println("Buonasera Signor*, il suo nome prego..");
+		invitedName = guestName.nextLine();
+		
+		guestName.close();
+		
+		for(int i = 0; i < invited.length -1; i++) {
 			
+			String nameList = invited[i];
 			
-			
-			System.out.println("Buonasera Signor*, il suo nome prego..");
-			invitedName = guestName.nextLine();
-			
-			for(int i = 0; i < invited.length; i++) {
-				String bodyGuardMessage;
-				
-				String nameList = invited[i].toLowerCase();
-				
-				if(invitedName.equals(nameList) ) {
-					bodyGuardMessage = "Prego, si accomodi..";
-					System.out.println(bodyGuardMessage);
-					
-				}else{
-					bodyGuardMessage = "Ma ndo vai?";
-					System.out.println(bodyGuardMessage);
-				}
-
+			if(invitedName.equals(nameList)) {
+				bodyGuardMessage = "Benvenut*";
+			}else if(invitedName.equals(nameList)) {
+				bodyGuardMessage = "ma ndo vai?";
 			}
+			
+		}
+		
+		
+		
+		System.out.println(bodyGuardMessage);
+		
+		
 	}
 
 }
