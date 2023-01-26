@@ -21,16 +21,9 @@ public class ClassificaFrutti {
 		
 		int mediana = fruits.length / 2;
 		
-		
-		
-		
-		
-	
 		System.out.println("Frutto preferito:" + " " + fruits[0]);
-		System.out.println("Frutto meno preferito:" + " " + fruits[6]);
-		System.out.println("Fruttomediano:" + " " + fruits[mediana]);
-		
-		
+		System.out.println("Frutto meno preferito:" + " " + fruits[fruits.length-1]);
+		System.out.println("Frutto mediano:" + " " + fruits[mediana]);
 		
 	}
 
